@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Nicole Elazar | Developer Designer</title>
+</head>
+
+<body>
+    <!-- cover body when modals are open -->
+    <div id="modal-backing" onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3')"></div>
+
+
+    <!-- mobile nav ---------------------------->
+    <div id="nav-mobile">
+        <input type="checkbox" id="burger-check">
+        <label for="burger-check" class="label-style">
+            <div class="burger-box">
+                <div class="bar"></div>
+            </div>
+        </label>
+
+        <label for="burger-check" id="mobile-empty"></label>
+
+        <div class="nav-mobile-menu">
+            <a href="#home" class="nav-mobile-item">Home</a>
+            <a href="#developer" class="nav-mobile-item">Developer</a>
+            <a href="#designer" class="nav-mobile-item">Designer</a>
+            <a href="#contact" class="nav-mobile-item">Contact</a>
+        </div>
+    </div>
+    <!-- landing section ----------------------------------------->
+
+    <main class="parallax-container">
+
+        <header id="home">
+
+            <!-- autoplay in JS -->
+            <video id="hero-video" poster="poster.png" muted loop>
+                <source src="./assets/cages_long.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <div class="nav-bar">
+                <a href="#home" class="logo"></a>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#developer" class="nav-item">Developer</a></li>
+                        <li><a href="#designer" class="nav-item">Designer</a></li>
+                        <li><a href="#contact" class="nav-item">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="container-header">
+                <div class="header-info">
+                    <h1 class="header-title">Developer, Designer.</h1>
+                    <p class="header-text">Hi! I'm Nicole, a front-end developer and 3D motion/ graphic designer from
+                        Sydney.</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- developer section ----------------------------------------->
+
+        <section id="developer">
+            <div class="container">
+                <h1 class="heading">Developer</h1>
+                <p class="paragraphs"><strong>Tools: </strong>HTML, CSS, SCSS, JavaScript, JQuery, Bootstrap,
+                    Craft CMS + Twig.
+                    <br>
+                    <strong>Knowledge of: </strong>Angular + TypeScript, Vue.js.
+                </p>
+                <p class="paragraph-full-size">Below is a selection of my projects, hover to view:</p>
+                <p class="paragraph-small-size">Below is a selection of my projects:</p>
+
+                <!-- PROJECT ONE -->
+                <div class="project-tiles">
+                    <div class="tile" id="project-1">
+                        <div class="tile-overlay">
+                            <p class="tile-heading">'Alien Zap'</p>
+                            <button class="tile-btn" onclick="openModal('modal1')">view project</button>
+                        </div>
+                    </div>
+                    <p class="project-caption" onclick="openModal('modal1')"><strong>Front-End Development - PC
+                            Game</strong></p>
+                    <p class="project-language">'Alien Zap'
+                        <br>
+                        HTML, CSS, JavaScript
+                    </p>
+
+                    <div class="mobile-project-info">
+                        <p class="project-caption-mobile"><strong>Front-End Development - PC
+                                Game</strong></p>
+                        <p class="small-text">'Alien Zap' - Personal Project 2019</p>
+                        <p class="sub-heading-mobile"> <strong>HTML, CSS, JavaScript</strong></p>
+                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create a simple game inspired by space
+                            invaders. The player can
+                            shoot to eliminate the aliens before they reach the bottom of the screen. The aliens move
+                            faster as they are eliminated and as the player progresses through the levels.</p>
+                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The game includes a small particle
+                            effect,
+                            collision
+                            detection and a score board.</p>
+                        <div class="btn-contain">
+                            <a target="_blank" href="https://github.com/nicoleelazar/alien-zap"
+                                class="button btn-modal">view code</a>
+                            <a target="_blank" href="https://nicoleelazar.github.io/alien-zap/"
+                                class="button btn-modal">live view</a>
+                        </div>
+                        <hr class="line">
+                    </div>
+
+
+
+                    <!-- PROJECT TWO -->
+
+                    <div class="tile" id="project-2">
+                        <div class="tile-overlay">
+                            <p class="tile-heading">'Breweries & Notes'</p>
+                            <button class="tile-btn" onclick="openModal('modal2')">view project</button>
+                        </div>
+                    </div>
+                    <p class="project-caption" onclick="openModal('modal2')"><strong>Front-End Development - Notes
+                            App</strong></p>
+                    <p class="project-language">'Breweries & Notes'
+                        <br>
+                        Angular, TypeScript
+                    </p>
+
+                    <div class="mobile-project-info">
+                        <p class="project-caption-mobile"><strong>Front-End Development - Notes App</strong></p>
+                        <p class="small-text">'Breweries & Notes' - Personal Project 2019</p>
+                        <p class="sub-heading-mobile"> <strong>Angular, TypeScript</strong></p>
+                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create a site with information about
+                            breweries
+                            in California, including an in-built note making app. There is information and
+                            links to the websites of 50 Breweries from the Open Brewery DB API.</p>
+                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The site includes a request to a free
+                            API,
+                            Angular routing, an Angular form with validation and a countdown timer.</p>
+                        <div class="btn-contain">
+                            <a target="_blank" href="https://github.com/nicoleelazar/breweries-notes-app"
+                                class="button btn-modal">view code</a>
+                            <a target="_blank" href="https://breweries-notes-app.netlify.com"
+                                class="button btn-modal">live view</a>
+                        </div>
+                        <hr class="line">
+
+                    </div>
+
+
+
+
+                    <!-- PROJECT THREE -->
+
+                    <div class="tile" id="project-3">
+                        <div class="tile-overlay">
+                            <p class="tile-heading">'Cat Clicker'</p>
+                            <button class="tile-btn" onclick="openModal('modal3')">view project</button>
+                        </div>
+                    </div>
+                    <p class="project-caption" onclick="openModal('modal3')"><strong>Front-End Development - Drag Drop &
+                            Vote App</strong></p>
+                    <p class="project-language">'Cat Clicker'
+                        <br>
+                        HTML, CSS, JavaScript
+                    </p>
+
+                    <div class="mobile-project-info">
+                        <p class="project-caption-mobile"><strong>Front-End Development - Drag Drop & Vote App</strong>
+                        </p>
+                        <p class="small-text">'Cat Clicker' - Personal Project 2019</p>
+                        <p class="sub-heading-mobile"> <strong>HTML, CSS, JavaScript</strong></p>
+                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create an app using scalable
+                            JavaScript. It
+                            can hold an
+                            unlimited amount of cat photos that can be clicked to increase their vote count and
+                            rearranged on
+                            the page.</p>
+                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The app makes use of a prototype
+                            design
+                            pattern and includes a drag and drop function.</p>
+                        <div class="btn-contain">
+                            <a target="_blank" href="https://github.com/nicoleelazar/cat-clicker"
+                                class="button btn-modal">view code</a>
+                            <a target="_blank" href="https://nicoleelazar.github.io/cat-clicker/"
+                                class="button btn-modal">live view</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <p class="sentence">View the code to this <a class="word-link" target="_blank"
+                        href=""><strong>responsive website</strong></a>.</p>
+
+
+                <p class="sub-heading end-space">See more of my development projects on <a class="word-link"
+                        target="_blank" href="https://github.com/nicoleelazar"><strong>GitHub</strong></a>.</p>
+            </div>
+
+
+
+            <!-- Project modals for each tile -------------------->
+            <div class="modal" id="modal1">
+                <div class="modal-content ">
+                    <span class="close" onclick="closeModal('modal1')">&times;</span>
+                    <div class="modal-info">
+                        <h1 class="modal-heading">Alien Zap</h1>
+                        <p class="small-text">Personal Project 2019</p>
+                        <p class="sub-heading"> <strong>HTML, CSS, JavaScript</strong></p>
+                        <img class="modal-image" src="./assets/tile-alien.png" alt="image of alien zap game">
+                        <p class="sub-heading"><strong>Brief: </strong>To create a simple game inspired by space
+                            invaders. The player can
+                            shoot to eliminate the aliens before they reach the bottom of the screen. The aliens move
+                            faster as they are eliminated and as the player progresses through the levels.</p>
+                        <p class="sub-heading"><strong>Highlights: </strong>The game includes a small particle effect,
+                            collision
+                            detection and a score board.</p>
+                        <a target="_blank" href="https://github.com/nicoleelazar/alien-zap"
+                            class="button btn-modal">view code</a>
+                        <a target="_blank" href="https://nicoleelazar.github.io/alien-zap/"
+                            class="button btn-modal">live view</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="modal" id="modal2">
+                <div class="modal-content ">
+                    <span class="close" onclick="closeModal('modal2')">&times;</span>
+                    <div class="modal-info">
+                        <h1 class="modal-heading">Breweries & Notes</h1>
+                        <p class="small-text">Personal Project 2019</p>
+                        <p class="sub-heading"> <strong>Angular, TypeScript</strong></p>
+                        <img class="modal-image" src="./assets/tile-notes.png" alt="image of notes app">
+                        <p class="sub-heading"><strong>Brief: </strong>To create a site with information about breweries
+                            in California, including an in-built note making app. There is information and
+                            links to the websites of 50 Breweries from the Open Brewery DB API.</p>
+                        <p class="sub-heading"><strong>Highlights: </strong>The site includes a request to a free API,
+                            Angular routing, an Angular form with validation and a countdown timer.</p>
+                        <a target="_blank" href="https://github.com/nicoleelazar/breweries-notes-app"
+                            class="button btn-modal">view code</a>
+                        <a target="_blank" href="https://breweries-notes-app.netlify.com" class="button btn-modal">live
+                            view</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="modal" id="modal3">
+                <div class="modal-content ">
+                    <span class="close" onclick="closeModal('modal3')">&times;</span>
+                    <div class="modal-info">
+                        <h1 class="modal-heading">Cat Clicker</h1>
+                        <p class="small-text">Personal Project 2019</p>
+                        <p class="sub-heading"> <strong>HTML, CSS, JavaScript</strong></p>
+                        <img class="modal-image" src="./assets/tile-cat.png" alt="image of cat clicker app">
+                        <p class="sub-heading"><strong>Brief: </strong>To create an app using scalable JavaScript. It
+                            can hold an
+                            unlimited amount of cat photos that can be clicked to increase their vote count and
+                            rearranged on
+                            the page.</p>
+                        <p class="sub-heading"><strong>Highlights: </strong>The app makes use of a prototype design
+                            pattern and includes a drag and drop function.</p>
+                        <a target="_blank" href="https://github.com/nicoleelazar/cat-clicker"
+                            class="button btn-modal">view code</a>
+                        <a target="_blank" href="https://nicoleelazar.github.io/cat-clicker/"
+                            class="button btn-modal">live view</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- designer section ----------------------------------------->
+
+        <!-- embedded vimeo ---------------------->
+        <section id="designer">
+
+            <div class="container">
+                <h1 class="heading">Designer</h1>
+                <p class="paragraphs"><strong>Tools: </strong>Cinema 4D, Octane Render, After Effects, Premiere Pro,
+                    Photoshop, Illustrator, InDesign.
+                </p>
+                <p class="paragraphs">Below is my motion design showreel:</p>
+
+                <div class="resp-container">
+                    <iframe class="resp-iframe" src="https://player.vimeo.com/video/299449183" webkitallowfullscreen
+                        allowfullscreen></iframe>
+                </div>
+                <p class="sub-heading sub-heading-design end-space">See more of my 3D work and graphic design projects
+                    on <a class="word-link" target="_blank"
+                        href="https://www.behance.net/nicoleelazar"><strong>Behance</strong></a>.</p>
+            </div>
+
+        </section>
+
+
+        <!-- contact section ----------------------------------------->
+
+        <section id="contact">
+
+            <div class="container">
+                <h1 class="heading">Contact</h1>
+                <p class="sub-heading">Send me an email or find me online.</p>
+                <div class="centered-inset">
+                    <div class="my-photo"></div>
+                    <div class="social-media">
+                        <a target="_blank" href="https://github.com/nicoleelazar" id="git-hub" class="social"><i
+                                class="fab fa-github-square"></i></a>
+                        <a target="_blank" href="https://www.behance.net/nicoleelazar" id="behance" class="social"><i
+                                class="fab fa-behance-square"></i></a>
+                        <a target="_blank" href="https://codepen.io/nicoleelazar/#" id="codepen" class="social"><i
+                                class="fab fa-codepen"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/nicoleelazar/" id="linkedin"
+                            class="social"><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                    <div id="copy" class="copy"></div>
+                    <button class="email-btn">email me</button>
+                    <div id="hidden-content"></div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- footer ----------------------------------------->
+
+        <footer>
+            <div class="container centered-inset">
+                <p class="footer-info"><span id="year"></span><i class="far fa-copyright"></i> Nicole Elazar</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
