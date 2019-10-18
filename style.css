@@ -172,9 +172,9 @@ header {
     background-color: rgba(255, 190, 206, 0.2);
 }
 
-.home-poster-mobile {
+/* .home-poster-mobile {
     display: none;
-}
+} */
 
 
 .nav-bar {
@@ -826,7 +826,7 @@ footer {
         display: none;
     }
 
-    .home-poster-mobile {
+    /* .home-poster-mobile {
         display: block;
         position: absolute;
         z-index: -10;
@@ -835,7 +835,7 @@ footer {
         background: url('poster.png');
         background-size: cover;
         background-position: center;
-    }
+    } */
 
 
     #nav-mobile {
