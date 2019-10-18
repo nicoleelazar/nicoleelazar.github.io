@@ -57,7 +57,7 @@ footer {
 
 .sub-heading-mobile {
     font-size: 18px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     color: var(--color-grey-dark);
 
 }
@@ -172,6 +172,10 @@ header {
     background-color: rgba(255, 190, 206, 0.2);
 }
 
+.home-poster-mobile {
+    display: none;
+}
+
 
 .nav-bar {
     position: fixed;
@@ -266,6 +270,7 @@ nav {
     width: 100%;
     height: 100%;
 }
+
 
 
 
@@ -669,7 +674,7 @@ nav {
     height: 30px;
     font-size: 18px;
     text-align: center;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     color: var(--color-grey-light);
 }
 
@@ -808,7 +813,7 @@ footer {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 850px) {
 
     .container {
         width: 95%;
@@ -819,6 +824,17 @@ footer {
     .nav-bar,
     .logo {
         display: none;
+    }
+
+    .home-poster-mobile {
+        display: block;
+        position: absolute;
+        z-index: -10;
+        width: 100%;
+        height: 100%;
+        background: url('poster.png');
+        background-size: cover;
+        background-position: center;
     }
 
 
