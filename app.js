@@ -2,10 +2,11 @@ const copyMe = document.querySelector('.copy');
 const emailButton = document.querySelector('.email-btn');
 const emailArea = document.getElementById('hidden-content');
 const year = document.getElementById('year');
-const parallax = document.querySelector('.parallax');
 const modals = document.querySelectorAll('.modal');
 const modalBacking = document.getElementById('modal-backing');
 const navBar = document.querySelector('.nav-bar');
+const target = document.querySelector('.scroll');
+
 
 const burger = document.getElementById('burger-check');
 const mobileMenu = document.querySelectorAll('.nav-mobile-item');
@@ -62,6 +63,20 @@ function scrollAll() {
     }
 }
 window.addEventListener('scroll', scrollAll);
+
+
+
+//parallax
+function parallax() {
+
+    let scrolled = window.pageYOffset;
+    let rate = scrolled * -0.6;
+
+    target.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
+}
+window.addEventListener('scroll', parallax);
+
+
 
 
 // OPEN MODALS

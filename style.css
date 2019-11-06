@@ -261,8 +261,9 @@ nav {
     padding: 15px;
     max-width: 570px;
     color: white;
-    background-color: var(--color-grey-alpha);
+    background-color: rgba(75, 75, 75, 0.8);
 }
+
 
 #hero-video {
     position: absolute;
@@ -308,6 +309,7 @@ nav {
     text-decoration: none;
     color: var(--color-feature);
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 .word-link:hover {
