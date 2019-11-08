@@ -7,7 +7,8 @@
 }
 
 :root {
-    --color-feature: rgb(236, 22, 86);
+    /* --color-feature: rgb(236, 22, 86); */
+    --color-feature: #FF6969;
     --color-feature-orange: #ff8c4f;
     --color-grey-dark: rgb(75, 75, 75);
     --color-grey-light: rgb(172, 172, 172);
@@ -15,8 +16,9 @@
     --color-grey-alpha: rgba(75, 75, 75, 0.5);
     --color-break-line: rgb(197, 196, 196);
     --color-grey-light-alpha: rgba(214, 214, 214, 0.9);
-    --color-gradient: linear-gradient(20deg, #ff8c4f 0%, #ff8c4f 30%, rgb(236, 22, 86) 100%);
-    --color-gradient-btn: linear-gradient(20deg, rgba(248, 120, 60, 0.9) 0%, rgba(236, 22, 86, 0) 100%);
+    /* --color-gradient: linear-gradient(20deg, #ff8c4f 0%, #ff8c4f 30%, rgb(236, 22, 86) 100%); */
+    --color-gradient: linear-gradient(20deg, #ff8c4f 0%, #ff8c4f 30%, #FF6969 100%);
+    --color-gradient-btn: linear-gradient(20deg, #ff8c4f 0%, rgba(236, 22, 86, 0) 100%);
 
 
 }
@@ -195,7 +197,7 @@ header {
 
 .logo {
     margin: 0 24px;
-    background: url('./assets/NicLogo.png');
+    background: url('./assets/NicLogo1.png');
     background-size: contain;
     width: 35px;
     height: 35px;
