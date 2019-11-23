@@ -70,7 +70,7 @@ window.addEventListener('scroll', scrollAll);
 function parallax() {
 
     let scrolled = window.pageYOffset;
-    let rate = scrolled * -0.6;
+    let rate = scrolled * -0.8;
 
     target.style.transform = 'translate3d(0px, ' + rate + 'px, 0px)';
 }

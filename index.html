@@ -14,7 +14,8 @@
 
 <body>
     <!-- cover body when modals are open -->
-    <div id="modal-backing" onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3')"></div>
+    <div id="modal-backing"
+        onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3'); closeModal('modal4')"></div>
 
 
     <!-- mobile nav ---------------------------->
@@ -128,7 +129,7 @@
                             <button class="tile-btn" onclick="openModal('modal2')">view project</button>
                         </div>
                     </div>
-                    <p class="project-caption" onclick="openModal('modal2')"><strong>Notes
+                    <p class="project-caption" onclick="openModal('modal2')"><strong> Brewery Site & Notes
                             App</strong></p>
                     <p class="project-language">'Breweries & Notes'
                         <br>
@@ -196,6 +197,39 @@
                         </div>
                     </div>
 
+
+                    <!-- PROJECT  FOUR-->
+                    <div class="tile" id="project-4">
+                        <div class="tile-overlay">
+                            <p class="tile-heading">'Secret Cipher'</p>
+                            <button class="tile-btn" onclick="openModal('modal4')">view project</button>
+                        </div>
+                    </div>
+                    <p class="project-caption" onclick="openModal('modal4')"><strong>Decode & Encode Messages
+                            App</strong></p>
+                    <p class="project-language">'Secret Cipher'
+                        <br>
+                        HTML, SCSS, Bootstrap, JavaScript
+                    </p>
+
+                    <div class="mobile-project-info">
+                        <p class="project-caption-mobile"><strong>Decode & Encode Messages App</strong>
+                        </p>
+                        <p class="small-text">'Secret Cipher' - Personal Project 2019</p>
+                        <p class="sub-heading-mobile"> <strong>HTML, SCSS, Bootstrap, JavaScript</strong></p>
+                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create a scalable app based on the
+                            ROT13 cipher method. It
+                            can decode a message based on letter rotation as well as encode one.</p>
+                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The app has numerous options for
+                            letter rotation amount and includes a copy to clipboard function for the resulting message.
+                        </p>
+                        <div class="btn-contain">
+                            <a target="_blank" href="https://github.com/nicoleelazar/secret-cipher"
+                                class="button btn-modal">view code</a>
+                            <a target="_blank" href="https://secret-cipher.netlify.com/" class="button btn-modal">live
+                                view</a>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -292,6 +326,32 @@
             </div>
 
 
+
+            <div class="modal" id="modal4">
+                <div class="modal-content ">
+                    <span class="close" onclick="closeModal('modal4')">&times;</span>
+                    <div class="modal-info">
+                        <h1 class="modal-heading">Secret Cipher</h1>
+                        <p class="small-text">Personal Project 2019</p>
+                        <p class="sub-heading"> <strong>HTML, SCSS, Bootstrap, JavaScript</strong></p>
+                        <img class="modal-image" src="./assets/tile-cipher.png" alt="image of secret cipher app">
+                        <p class="sub-heading"><strong>Brief: </strong>To create a scalable app based on the
+                            ROT13 cipher method. It
+                            can decode a message based on letter rotation as well as encode one.</p>
+                        <p class="sub-heading"><strong>Highlights: </strong>The app has numerous options for
+                            letter rotation amount and includes a copy to clipboard function for the resulting message.
+                        </p>
+                        <a target="_blank" href="https://github.com/nicoleelazar/secret-cipher"
+                            class="button btn-modal">view code</a>
+                        <a target="_blank" href="https://secret-cipher.netlify.com/" class="button btn-modal">live
+                            view</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
         </section>
 
 
@@ -337,6 +397,9 @@
                                 class="fab fa-codepen"></i></a>
                         <a target="_blank" href="https://www.linkedin.com/in/nicoleelazar/" id="linkedin"
                             class="social"><i class="fab fa-linkedin"></i></a>
+                        <a target="_blank" href="https://vimeo.com/nicoleelazar" id="vimeo" class="social"><i
+                                class="fab fa-vimeo"></i></a>
+
                     </div>
 
                     <div id="copy" class="copy"></div>
