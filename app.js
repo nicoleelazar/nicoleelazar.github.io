@@ -14,7 +14,7 @@ const mobileMenu = document.querySelectorAll('.nav-mobile-item');
 
 // Update footer year
 function updateYear() {
-    year.innerHTML = `${new Date().getFullYear()} `;
+    year.innerHTML = ` ${new Date().getFullYear()} `;
 }
 
 

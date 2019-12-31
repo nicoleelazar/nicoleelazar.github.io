@@ -7,7 +7,6 @@
 }
 
 :root {
-    /* --color-feature: rgb(236, 22, 86); */
     --color-feature: #FF6969;
     --color-feature-orange: #ff8c4f;
     --color-grey-dark: rgb(75, 75, 75);
@@ -16,7 +15,6 @@
     --color-grey-alpha: rgba(75, 75, 75, 0.5);
     --color-break-line: rgb(197, 196, 196);
     --color-grey-light-alpha: rgba(214, 214, 214, 0.9);
-    /* --color-gradient: linear-gradient(20deg, #ff8c4f 0%, #ff8c4f 30%, rgb(236, 22, 86) 100%); */
     --color-gradient: linear-gradient(20deg, #ff8c4f 0%, #ff8c4f 30%, #FF6969 100%);
     --color-gradient-btn: linear-gradient(20deg, #ff8c4f 0%, rgba(236, 22, 86, 0) 100%);
 
@@ -30,9 +28,8 @@ body {
 
 .container {
     width: 60%;
-    max-width: 1300px;
+    max-width: 900px;
     margin: 0 auto;
-
 }
 
 section,
@@ -358,7 +355,7 @@ nav {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url('./assets/tile-alien.png');
+    background-image: url('./assets/tile-games.png');
     background-position: center;
     background-size: cover;
     transition: all 0.5s ease-in-out;
