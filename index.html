@@ -15,7 +15,8 @@
 <body>
     <!-- cover body when modals are open -->
     <div id="modal-backing"
-        onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3'); closeModal('modal4')"></div>
+        onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3'); closeModal('modal4'); closeModal('modal5')">
+    </div>
 
 
     <!-- mobile nav ---------------------------->
@@ -130,6 +131,46 @@
 
 
 
+
+
+                    <!-- PROJECT FIVE -->
+
+                    <div class="tile" id="project-5">
+                        <div class="tile-overlay">
+                            <p class="tile-heading">'Search Your Book'</p>
+                            <button class="tile-btn" onclick="openModal('modal5')">view project</button>
+                        </div>
+                    </div>
+                    <p class="project-caption" onclick="openModal('modal5')"><strong>Book Analysis App</strong></p>
+                    <p class="project-language">'Search Your Book'
+                        <br>
+                        HTML, CSS, Bootstrap, JavaScript
+                    </p>
+
+                    <div class="mobile-project-info">
+                        <p class="project-caption-mobile"><strong>Book Analysis App</strong></p>
+                        <p class="small-text">'Search Your Book' - Personal Project 2020</p>
+                        <p class="sub-heading-mobile"> <strong>HTML, CSS, Bootstrap, JavaScript</strong></p>
+                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create an app that can search any text
+                            file and provide information on the frequency and location of any word used in the text.</p>
+                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The app includes a word search field
+                            with text highlighting, 'previous' and 'next' buttons to step through highlighted words, a
+                            file input field
+                            for loading .txt files, word count and popular words tally.</p>
+                        <div class="btn-contain">
+                            <a target="_blank" href="https://github.com/nicoleelazar/search-your-book"
+                                class="button btn-modal">view code</a>
+                            <a target="_blank" href="https://nicoleelazar.github.io/search-your-book"
+                                class="button btn-modal">live view</a>
+                        </div>
+                        <hr class="line">
+
+                    </div>
+
+
+
+
+
                     <!-- PROJECT TWO -->
 
                     <div class="tile" id="project-2">
@@ -138,7 +179,7 @@
                             <button class="tile-btn" onclick="openModal('modal2')">view project</button>
                         </div>
                     </div>
-                    <p class="project-caption" onclick="openModal('modal2')"><strong> Brewery Site & Notes
+                    <p class="project-caption" onclick="openModal('modal2')"><strong>Brewery Finder & Notes
                             App</strong></p>
                     <p class="project-language">'Breweries & Notes'
                         <br>
@@ -146,7 +187,7 @@
                     </p>
 
                     <div class="mobile-project-info">
-                        <p class="project-caption-mobile"><strong>Notes App</strong></p>
+                        <p class="project-caption-mobile"><strong>Brewery Finder & Notes App</strong></p>
                         <p class="small-text">'Breweries & Notes' - Personal Project 2019</p>
                         <p class="sub-heading-mobile"> <strong>Angular, TypeScript</strong></p>
                         <p class="sub-heading-mobile"><strong>Brief: </strong>To create a site with information about
@@ -291,6 +332,33 @@
                 </div>
             </div>
 
+
+
+
+            <div class="modal" id="modal5">
+                <div class="modal-content ">
+                    <span class="close" onclick="closeModal('modal5')">&times;</span>
+                    <div class="modal-info">
+                        <h1 class="modal-heading">Search Your Book</h1>
+                        <p class="small-text">Personal Project 2020</p>
+                        <p class="sub-heading"> <strong>HTML, CSS, Bootstrap, JavaScript</strong></p>
+                        <img class="modal-image" src="./assets/tile-book.png" alt="image of book search app">
+                        <p class="sub-heading"><strong>Brief: </strong>To create an app that can search any text
+                            file and provide information on the frequency and location of any word used in the text.</p>
+                        <p class="sub-heading"><strong>Highlights: </strong>The app includes a word search field
+                            with text highlighting, 'previous' and 'next' buttons to step through highlighted words, a
+                            file input field
+                            for loading .txt files, word count and popular words tally.</p>
+                        <a target="_blank" href="https://github.com/nicoleelazar/search-your-book"
+                            class="button btn-modal">view code</a>
+                        <a target="_blank" href="https://nicoleelazar.github.io/search-your-book"
+                            class="button btn-modal">live
+                            view</a>
+
+                    </div>
+
+                </div>
+            </div>
 
 
 
