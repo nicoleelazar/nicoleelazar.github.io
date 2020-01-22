@@ -28,7 +28,7 @@ $(document).ready(function () {
     if (screenWidth > 850) {
         $('#hero-video').attr('autoplay', 'autoplay');
     } else {
-        let videoPoster = "assets/poster.png"
+        let videoPoster = "/assets/poster.png"
         $('.home-poster-mobile').css({
             'background-image': 'url(' + videoPoster + ')',
             'display': 'block'
