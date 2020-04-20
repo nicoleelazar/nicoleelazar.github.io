@@ -15,8 +15,9 @@
 <body>
     <!-- cover body when modals are open -->
     <div id="modal-backing"
-        onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3'); closeModal('modal4'); closeModal('modal5')">
+        onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3'); closeModal('modal4'); closeModal('modal5'); closeModal('modal6');">
     </div>
+
 
 
     <!-- mobile nav ---------------------------->
@@ -64,8 +65,8 @@
             <div class="container-header">
                 <div class="header-info scroll">
                     <h1 class="header-title">Developer, Designer.</h1>
-                    <p class="header-text">Hi! I'm Nicole, a front-end developer and 3D motion designer from
-                        Sydney.</p>
+                    <p class="header-text">Hi! I'm Nicole, a front-end developer with a background in 3D motion design.
+                    </p>
                 </div>
             </div>
         </header>
@@ -75,9 +76,9 @@
         <section id="developer">
             <div class="container">
                 <h1 class="heading">Developer</h1>
-                <p class="paragraphs"><strong>Tools: </strong>HTML, CSS, SCSS, JavaScript, JQuery, Bootstrap.
+                <p class="paragraphs"><strong>Tools: </strong>HTML, CSS, SCSS, Bootstrap, JavaScript, React, Git.
                     <br>
-                    <strong>Knowledge of: </strong>Angular + TypeScript, Vue.js.
+                    <strong>Knowledge of: </strong>JQuery, Angular + TypeScript.
                 </p>
                 <p class="paragraph-full-size">Below is a selection of my projects, hover to view:</p>
                 <p class="paragraph-small-size">Below is a selection of my projects:</p>
@@ -87,7 +88,7 @@
                     <div class="tile" id="project-1">
                         <div class="tile-overlay">
                             <p class="tile-heading">'Short Games'</p>
-                            <button class="tile-btn" onclick="openModal('modal1')">view project</button>
+                            <button class="tile-btn" onclick="openModal('modal1')">project details</button>
                         </div>
                     </div>
                     <p class="project-caption" onclick="openModal('modal1')"><strong>Desktop & Mobile Games</strong></p>
@@ -102,18 +103,7 @@
                         <p class="sub-heading-mobile"> <strong>HTML, CSS, JavaScript</strong></p>
                         <p class="sub-heading-mobile"><strong>Brief: </strong>To create a collection of games that can
                             be completed
-                            quickly.</p>
-                        <p class="sub-heading-mobile">There are currently 2 games in the collection.</p>
-                        <p class="sub-heading-mobile">Alien Zap - The player can
-                            shoot to eliminate the aliens before they reach the bottom of the screen. The aliens
-                            move
-                            faster as they are eliminated and as the player progresses through the levels.</p>
-                        <p class="sub-heading-mobile">Owl
-                            Attack -
-                            The player must reach 40 points to win the game by tapping the owls as they appear. The
-                            owls
-                            speed up for every 10 points gained.</p>
-
+                            quickly. There are currently 2 games in the collection, Alien Zap and Owl Attack.</p>
                         <p class="sub-heading-mobile"><strong>Highlights: </strong>Alien Zap includes a small particle
                             effect and
                             collision
@@ -131,6 +121,39 @@
 
 
 
+                    <!-- PROJECT SIX -->
+
+                    <div class="tile" id="project-6">
+                        <div class="tile-overlay">
+                            <p class="tile-heading">'Recipe Finder'</p>
+                            <button class="tile-btn" onclick="openModal('modal6')">project details</button>
+                        </div>
+                    </div>
+                    <p class="project-caption" onclick="openModal('modal6')"><strong>Recipe Search App</strong></p>
+                    <p class="project-language">'Recipe Finder'
+                        <br>
+                        React, Hooks, Modules
+                    </p>
+
+                    <div class="mobile-project-info">
+                        <p class="project-caption-mobile"><strong>Recipe Search App</strong></p>
+                        <p class="small-text">'Recipe Finder' - Personal Project 2020</p>
+                        <p class="sub-heading-mobile"> <strong>React, Hooks, Modules</strong></p>
+                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create an app that provides recipes
+                            corresponding to any searched ingredient.</p>
+                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The app includes a user input search
+                            field that makes requests to the Edamam food API.</p>
+                        <div class="btn-contain">
+                            <a target="_blank" href="https://github.com/nicoleelazar/react-recipe-app"
+                                class="button btn-modal">view code</a>
+                            <a target="_blank" href="https://recipe-finder-app-nicole.netlify.app"
+                                class="button btn-modal">live view</a>
+                        </div>
+                        <hr class="line">
+
+                    </div>
+
+
 
 
                     <!-- PROJECT FIVE -->
@@ -138,7 +161,7 @@
                     <div class="tile" id="project-5">
                         <div class="tile-overlay">
                             <p class="tile-heading">'Search Your Book'</p>
-                            <button class="tile-btn" onclick="openModal('modal5')">view project</button>
+                            <button class="tile-btn" onclick="openModal('modal5')">project details</button>
                         </div>
                     </div>
                     <p class="project-caption" onclick="openModal('modal5')"><strong>Book Analysis App</strong></p>
@@ -170,52 +193,12 @@
 
 
 
-
-                    <!-- PROJECT TWO -->
-
-                    <div class="tile" id="project-2">
-                        <div class="tile-overlay">
-                            <p class="tile-heading">'Breweries & Notes'</p>
-                            <button class="tile-btn" onclick="openModal('modal2')">view project</button>
-                        </div>
-                    </div>
-                    <p class="project-caption" onclick="openModal('modal2')"><strong>Brewery Finder & Notes
-                            App</strong></p>
-                    <p class="project-language">'Breweries & Notes'
-                        <br>
-                        Angular, TypeScript
-                    </p>
-
-                    <div class="mobile-project-info">
-                        <p class="project-caption-mobile"><strong>Brewery Finder & Notes App</strong></p>
-                        <p class="small-text">'Breweries & Notes' - Personal Project 2019</p>
-                        <p class="sub-heading-mobile"> <strong>Angular, TypeScript</strong></p>
-                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create a site with information about
-                            breweries
-                            in California, including an in-built note making app. There is information and
-                            links to the websites of 50 Breweries from the Open Brewery DB API.</p>
-                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The site includes a request to a free
-                            API,
-                            Angular routing, an Angular form with validation and a countdown timer.</p>
-                        <div class="btn-contain">
-                            <a target="_blank" href="https://github.com/nicoleelazar/breweries-notes-app"
-                                class="button btn-modal">view code</a>
-                            <a target="_blank" href="https://breweries-notes-app.netlify.com"
-                                class="button btn-modal">live view</a>
-                        </div>
-                        <hr class="line">
-
-                    </div>
-
-
-
-
                     <!-- PROJECT THREE -->
 
                     <div class="tile" id="project-3">
                         <div class="tile-overlay">
                             <p class="tile-heading">'Cat Clicker'</p>
-                            <button class="tile-btn" onclick="openModal('modal3')">view project</button>
+                            <button class="tile-btn" onclick="openModal('modal3')">project details</button>
                         </div>
                     </div>
                     <p class="project-caption" onclick="openModal('modal3')"><strong>Drag Drop &
@@ -253,7 +236,7 @@
                     <div class="tile" id="project-4">
                         <div class="tile-overlay">
                             <p class="tile-heading">'Secret Cipher'</p>
-                            <button class="tile-btn" onclick="openModal('modal4')">view project</button>
+                            <button class="tile-btn" onclick="openModal('modal4')">project details</button>
                         </div>
                     </div>
                     <p class="project-caption" onclick="openModal('modal4')"><strong>Decode & Encode Messages
@@ -282,6 +265,41 @@
                         </div>
                     </div>
 
+
+                    <!-- PROJECT TWO -->
+
+                    <div class="tile" id="project-2">
+                        <div class="tile-overlay">
+                            <p class="tile-heading">'Breweries & Notes'</p>
+                            <button class="tile-btn" onclick="openModal('modal2')">project details</button>
+                        </div>
+                    </div>
+                    <p class="project-caption" onclick="openModal('modal2')"><strong>Brewery Finder & Notes
+                            App</strong></p>
+                    <p class="project-language">'Breweries & Notes'
+                        <br>
+                        Angular, TypeScript
+                    </p>
+
+                    <div class="mobile-project-info">
+                        <p class="project-caption-mobile"><strong>Brewery Finder & Notes App</strong></p>
+                        <p class="small-text">'Breweries & Notes' - Personal Project 2019</p>
+                        <p class="sub-heading-mobile"> <strong>Angular, TypeScript</strong></p>
+                        <p class="sub-heading-mobile"><strong>Brief: </strong>To create an app that hosts information
+                            about Californian breweries, with an area to make notes about brewery visits.</p>
+                        <p class="sub-heading-mobile"><strong>Highlights: </strong>The site includes a request to the
+                            Open Brewery DB API,
+                            Angular routing, an Angular form with validation and a note making app.</p>
+                        <div class="btn-contain">
+                            <a target="_blank" href="https://github.com/nicoleelazar/breweries-notes-app"
+                                class="button btn-modal">view code</a>
+                            <a target="_blank" href="https://breweries-notes-app.netlify.com"
+                                class="button btn-modal">live view</a>
+                        </div>
+                        <hr class="line">
+
+                    </div>
+
                 </div>
 
                 <p class="sentence">View the code to this <a class="word-link" target="_blank"
@@ -296,6 +314,7 @@
 
 
             <!-- Project modals for each tile -------------------->
+
             <div class="modal" id="modal1">
                 <div class="modal-content ">
                     <span class="close" onclick="closeModal('modal1')">&times;</span>
@@ -303,19 +322,10 @@
                         <h1 class="modal-heading">Short Games</h1>
                         <p class="small-text">Personal Project 2019</p>
                         <p class="sub-heading"> <strong>HTML, CSS, JavaScript</strong></p>
-                        <img class="modal-image" src="/assets/tile-games.png"
-                            alt="image of alien zap & owl attack games">
+                        <img class="modal-image" src="/assets/space-invaders.jpg" alt="alien zap & owl attack games">
                         <p class="sub-heading"><strong>Brief: </strong>To create a collection of games that can
                             be completed
-                            quickly.</p>
-                        <p class="sub-heading">There are currently 2 games in the collection.</p>
-                        <p class="sub-heading">Alien Zap - The player can
-                            shoot to eliminate the aliens before they reach the bottom of the screen. The aliens move
-                            faster as they are eliminated and as the player progresses through the levels.</p>
-                        <p class="sub-heading">Owl Attack -
-                            The player must reach 40 points to win the game by tapping the owls as they appear. The owls
-                            speed up for every 10 points gained.</p>
-
+                            quickly. There are currently 2 games in the collection, Alien Zap and Owl Attack.</p>
 
                         <p class="sub-heading"><strong>Highlights: </strong>Alien Zap includes a small particle
                             effect and
@@ -343,7 +353,7 @@
                         <h1 class="modal-heading">Search Your Book</h1>
                         <p class="small-text">Personal Project 2020</p>
                         <p class="sub-heading"> <strong>HTML, CSS, Bootstrap, JavaScript</strong></p>
-                        <img class="modal-image" src="./assets/tile-books.png" alt="image of book search app">
+                        <img class="modal-image" src="./assets/narrative.jpg" alt="book search app">
                         <p class="sub-heading"><strong>Brief: </strong>To create an app that can search any text
                             file and provide information on the frequency and location of any word used in the text.</p>
                         <p class="sub-heading"><strong>Highlights: </strong>The app includes a word search field
@@ -363,6 +373,31 @@
 
 
 
+            <div class="modal" id="modal6">
+                <div class="modal-content ">
+                    <span class="close" onclick="closeModal('modal6')">&times;</span>
+                    <div class="modal-info">
+                        <h1 class="modal-heading">Recipe Finder</h1>
+                        <p class="small-text">Personal Project 2020</p>
+                        <p class="sub-heading"> <strong>React, Hooks, Modules</strong></p>
+                        <img class="modal-image" src="./assets/spices.jpg" alt="recipe search app">
+                        <p class="sub-heading"><strong>Brief: </strong>To create an app that provides recipes
+                            corresponding to any searched ingredient.</p>
+                        <p class="sub-heading"><strong>Highlights: </strong>The app includes a user input search field
+                            that makes requests to the Edamam food API.</p>
+                        <a target="_blank" href="https://github.com/nicoleelazar/react-recipe-app"
+                            class="button btn-modal">view code</a>
+                        <a target="_blank" href="https://recipe-finder-app-nicole.netlify.app"
+                            class="button btn-modal">live
+                            view</a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
 
             <div class="modal" id="modal2">
                 <div class="modal-content ">
@@ -371,12 +406,12 @@
                         <h1 class="modal-heading">Breweries & Notes</h1>
                         <p class="small-text">Personal Project 2019</p>
                         <p class="sub-heading"> <strong>Angular, TypeScript</strong></p>
-                        <img class="modal-image" src="./assets/tile-notes.png" alt="image of notes app">
-                        <p class="sub-heading"><strong>Brief: </strong>To create a site with information about breweries
-                            in California, including an in-built note making app. There is information and
-                            links to the websites of 50 Breweries from the Open Brewery DB API.</p>
-                        <p class="sub-heading"><strong>Highlights: </strong>The site includes a request to a free API,
-                            Angular routing, an Angular form with validation and a countdown timer.</p>
+                        <img class="modal-image" src="./assets/notes.jpg" alt="notes app">
+                        <p class="sub-heading"><strong>Brief: </strong>To create an app that hosts information about
+                            Californian breweries, with an area to make notes about brewery visits.</p>
+                        <p class="sub-heading"><strong>Highlights: </strong>The site includes a request to the Open
+                            Brewery DB API,
+                            Angular routing, an Angular form with validation and a note making app.</p>
                         <a target="_blank" href="https://github.com/nicoleelazar/breweries-notes-app"
                             class="button btn-modal">view code</a>
                         <a target="_blank" href="https://breweries-notes-app.netlify.com" class="button btn-modal">live
@@ -397,7 +432,7 @@
                         <h1 class="modal-heading">Cat Clicker</h1>
                         <p class="small-text">Personal Project 2019</p>
                         <p class="sub-heading"> <strong>HTML, CSS, JavaScript</strong></p>
-                        <img class="modal-image" src="./assets/tile-cat.png" alt="image of cat clicker app">
+                        <img class="modal-image" src="./assets/kitten.jpg" alt="cat clicker app">
                         <p class="sub-heading"><strong>Brief: </strong>To create an app using scalable JavaScript. It
                             can hold an
                             unlimited amount of cat photos that can be clicked to increase their vote count and
@@ -424,7 +459,7 @@
                         <h1 class="modal-heading">Secret Cipher</h1>
                         <p class="small-text">Personal Project 2019</p>
                         <p class="sub-heading"> <strong>HTML, SCSS, Bootstrap, JavaScript</strong></p>
-                        <img class="modal-image" src="./assets/tile-cipher.png" alt="image of secret cipher app">
+                        <img class="modal-image" src="./assets/pompeii.jpg" alt="secret cipher app">
                         <p class="sub-heading"><strong>Brief: </strong>To create a scalable app based on the
                             ROT13 cipher method. It
                             can decode a message based on letter rotation as well as encode one.</p>
@@ -475,7 +510,8 @@
 
             <div class="container">
                 <h1 class="heading">Contact</h1>
-                <p class="sub-heading">I enjoy coding beautiful interactions and building tactile and usable digital
+                <p class="sub-heading">As a developer, I enjoy coding beautiful interactions and building
+                    tactile and usable digital
                     experiences. Feel free to send me an email or find me online.</p>
                 <div class="centered-inset">
                     <div class="my-photo"></div>
