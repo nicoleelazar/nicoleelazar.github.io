@@ -312,12 +312,23 @@ nav {
 #project-5,
 #project-6 {
     margin-bottom: 8px;
-    margin-top: 80px;
     overflow: hidden;
     position: relative;
     height: 250px;
     width: 100%;
     min-width: 300px;
+}
+
+#project-1 {
+    margin-top: 40px;
+}
+
+#project-2,
+#project-3,
+#project-4,
+#project-5,
+#project-6 {
+    margin-top: 80px;
 }
 
 #project-1::before,
@@ -336,7 +347,6 @@ nav {
     transition: all 0.5s ease-in-out;
     position: absolute;
     opacity: 0.8;
-
 }
 
 #project-1::before {
@@ -385,6 +395,11 @@ nav {
     -webkit-animation-name: animateTileOff;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-fill-mode: forwards;
+
+    -ms-animation-name: animateTileOff;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-fill-mode: forwards;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,6 +418,10 @@ nav {
     -webkit-animation-name: animateTileOn;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-fill-mode: forwards;
+
+    -ms-animation-name: animateTileOn;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-fill-mode: forwards;
 }
 
 @keyframes animateTileOff {
@@ -425,6 +444,16 @@ nav {
     }
 }
 
+@-ms-keyframes animateTileOff {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes animateTileOn {
     from {
         opacity: 0;
@@ -436,6 +465,16 @@ nav {
 }
 
 @-webkit-keyframes animateTileOn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes animateTileOn {
     from {
         opacity: 0;
     }
@@ -492,6 +531,10 @@ nav {
     -webkit-animation-name: animateModalOn;
     -webkit-animation-duration: 0.4s;
     -webkit-animation-fill-mode: forwards;
+
+    -ms-animation-name: animateModalOn;
+    -ms-animation-duration: 0.4s;
+    -ms-animation-fill-mode: forwards;
 }
 
 .modal-image {
@@ -533,6 +576,26 @@ nav {
 }
 
 @-webkit-keyframes animateModalOff {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes animateModalOn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes animateModalOff {
     from {
         opacity: 1;
     }
@@ -693,6 +756,12 @@ nav {
     -webkit-animation-timing-function: ease;
     -webkit-animation-duration: 1s;
     -webkit-animation-fill-mode: forwards;
+
+    -ms-animation-name: fadeInOut;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: ease;
+    -ms-animation-duration: 1s;
+    -ms-animation-fill-mode: forwards;
 }
 
 @keyframes fadeInOut {
@@ -710,6 +779,20 @@ nav {
 }
 
 @-webkit-keyframes fadeInOut {
+    0% {
+        color: var(--color-grey-light);
+    }
+
+    80% {
+        color: var(--color-grey-light);
+    }
+
+    100% {
+        color: var(--color-grey-vanish);
+    }
+}
+
+@-ms-keyframes fadeInOut {
     0% {
         color: var(--color-grey-light);
     }
@@ -995,6 +1078,26 @@ footer {
     }
 
     @-webkit-keyframes fadeout {
+        from {
+            background: rgba(168, 20, 52, 1);
+        }
+
+        to {
+            background: rgba(168, 20, 52, 0);
+        }
+    }
+
+    @-ms-keyframes fadein {
+        from {
+            background: rgba(168, 20, 52, 0);
+        }
+
+        to {
+            background: rgba(168, 20, 52, 1);
+        }
+    }
+
+    @-ms-keyframes fadeout {
         from {
             background: rgba(168, 20, 52, 1);
         }
