@@ -7,7 +7,7 @@
 }
 
 :root {
-    --color-feature: #ff6969;
+    --color-feature: #ff6d6d;
     --color-feature-orange: rgb(255, 140, 79);
     --color-grey-dark: rgb(75, 75, 75);
     --color-grey-light: rgb(175, 175, 175);
@@ -69,6 +69,10 @@ footer {
 
 .end-space {
     margin-bottom: 50px;
+}
+
+.end-space-small {
+    margin-bottom: 30px;
 }
 
 .line {
@@ -295,14 +299,50 @@ nav {
     color: var(--color-grey-dark);
 }
 
-.paragraph-small-size {
+/* .paragraph-small-size {
     display: none;
-}
+} */
 
 .paragraph-full-size {
     display: block;
     font-size: 18px;
     color: var(--color-grey-dark);
+    padding-top: 20px;
+}
+
+.flex-contain-clients {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.flex-item-client {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 280px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.client-image {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+}
+
+.client-image:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.client-image:hover {
+    cursor: pointer;
 }
 
 #project-1,
@@ -607,7 +647,8 @@ nav {
 
 .modal-content {
     background-color: white;
-    /* margin-top: 5%; */
+    width: 100%;
+    min-height: 100%;
 }
 
 .modal-info {
@@ -821,7 +862,7 @@ footer {
 
 /* MOBILE & Tablet ----------------------------------*/
 
-/* no modals at this width */
+/* no modals at this width for personal projects only */
 @media screen and (max-width: 1024px) {
     .container {
         width: 80%;
@@ -870,14 +911,25 @@ footer {
         text-transform: uppercase;
     }
 
-    .paragraph-small-size {
+    /* .paragraph-small-size {
         display: block;
         font-size: 18px;
         color: var(--color-grey-dark);
+    } */
+
+    /* .paragraph-full-size {
+        display: none;
+    } */
+
+    .modal {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
     }
 
-    .paragraph-full-size {
-        display: none;
+    .modal-info {
+        padding: 30px;
     }
 }
 
@@ -909,6 +961,11 @@ footer {
     .nav-bar,
     .logo {
         display: none;
+    }
+
+    .flex-item-client {
+        width: 210px;
+        height: 180px;
     }
 
     /* .home-poster-mobile {
@@ -1007,17 +1064,6 @@ footer {
 
     input:checked ~ .nav-mobile-menu {
         transform: translate(0, 0);
-        animation: fadein;
-        animation-duration: 0.3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-
-    input:not(checked) ~ .nav-mobile-menu {
-        animation: fadeout;
-        animation-duration: 0.3s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
     }
 
     /* tap on screen closes nav menu */
@@ -1031,80 +1077,19 @@ footer {
         display: block;
     }
 
-    input:not(checked) ~ #mobile-empty {
+    input:not(:checked) ~ #mobile-empty {
         display: none;
     }
 
     .nav-mobile-item {
         display: block;
         text-decoration: none;
-        background: var(--color-grey-light);
+        background: var(--color-break-line);
         color: white;
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px rgb(212, 212, 212);
         font-size: 20px;
         padding: 25px 35px;
         letter-spacing: 0.5px;
-    }
-
-    /* menu fade */
-    @keyframes fadein {
-        from {
-            background: rgba(168, 20, 52, 0);
-        }
-
-        to {
-            background: rgba(168, 20, 52, 1);
-        }
-    }
-
-    @keyframes fadeout {
-        from {
-            background: rgba(168, 20, 52, 1);
-        }
-
-        to {
-            background: rgba(168, 20, 52, 0);
-        }
-    }
-
-    @-webkit-keyframes fadein {
-        from {
-            background: rgba(168, 20, 52, 0);
-        }
-
-        to {
-            background: rgba(168, 20, 52, 1);
-        }
-    }
-
-    @-webkit-keyframes fadeout {
-        from {
-            background: rgba(168, 20, 52, 1);
-        }
-
-        to {
-            background: rgba(168, 20, 52, 0);
-        }
-    }
-
-    @-ms-keyframes fadein {
-        from {
-            background: rgba(168, 20, 52, 0);
-        }
-
-        to {
-            background: rgba(168, 20, 52, 1);
-        }
-    }
-
-    @-ms-keyframes fadeout {
-        from {
-            background: rgba(168, 20, 52, 1);
-        }
-
-        to {
-            background: rgba(168, 20, 52, 0);
-        }
     }
 }
 

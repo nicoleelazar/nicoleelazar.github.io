@@ -19,7 +19,8 @@
         <!-- cover body when modals are open -->
         <div
             id="modal-backing"
-            onclick="closeModal('modal1'); closeModal('modal2'); closeModal('modal3'); closeModal('modal4'); closeModal('modal5'); closeModal('modal6');"
+            onclick="closeModal('modal1'); closeModal('modal3'); closeModal('modal4'); closeModal('modal5'); closeModal('modal6');
+            closeModal('modalClient1');"
         ></div>
 
         <!-- mobile nav ---------------------------->
@@ -49,7 +50,13 @@
                 <div class="home-poster-mobile"></div>
 
                 <!-- autoplay in JS, disabled for mobile -->
-                <video poster="assets/poster.png" id="hero-video" muted loop>
+                <video
+                    poster="assets/poster.png"
+                    id="hero-video"
+                    muted
+                    loop
+                    autoplay
+                >
                     <source
                         src="./assets/cages_compressed.mp4"
                         type="video/mp4"
@@ -95,17 +102,27 @@
                 <div class="container">
                     <h1 class="heading">Development</h1>
                     <p class="paragraphs">
-                        <strong>Tools: </strong>HTML, CSS/ SCSS, JavaScript,
-                        React, Bootstrap, Git.
-                        <br />
-                        <strong>Knowledge of: </strong>JQuery, Angular +
-                        TypeScript.
+                        <strong>I work with: </strong>HTML, CSS/ SCSS,
+                        JavaScript, React, Git.
                     </p>
+
                     <p class="paragraph-full-size">
-                        Below is a selection of my projects, hover to view.
+                        Selection of Client Projects:
                     </p>
-                    <p class="paragraph-small-size">
-                        Below is a selection of my projects.
+
+                    <div class="flex-contain-clients">
+                        <div class="flex-item-client">
+                            <img
+                                class="client-image"
+                                src="assets/deVriesArts.png"
+                                alt="deVries Arts"
+                                onclick="openModal('modalClient1')"
+                            />
+                        </div>
+                    </div>
+
+                    <p class="paragraph-full-size">
+                        Selection of Personal Projects:
                     </p>
 
                     <!-- PROJECT ONE -->
@@ -428,79 +445,11 @@
                                     >live view</a
                                 >
                             </div>
-
-                            <hr class="line" />
-                        </div>
-
-                        <!-- PROJECT TWO -->
-
-                        <div class="tile" id="project-2">
-                            <div class="tile-overlay">
-                                <p class="tile-heading">'Breweries & Notes'</p>
-                                <button
-                                    class="tile-btn"
-                                    onclick="openModal('modal2')"
-                                >
-                                    project details
-                                </button>
-                            </div>
-                        </div>
-                        <p
-                            class="project-caption"
-                            onclick="openModal('modal2')"
-                        >
-                            <strong>Brewery Finder & Notes App</strong>
-                        </p>
-                        <p class="project-language">
-                            'Breweries & Notes'
-                            <br />
-                            Angular, TypeScript
-                        </p>
-
-                        <div class="mobile-project-info">
-                            <p class="project-caption-mobile">
-                                <strong>Brewery Finder & Notes App</strong>
-                            </p>
-                            <p class="small-text">
-                                'Breweries & Notes' - Personal Project 2019
-                            </p>
-                            <p class="sub-heading-mobile">
-                                <strong>Angular, TypeScript</strong>
-                            </p>
-                            <p class="sub-heading-mobile">
-                                <strong>Brief: </strong>To create an app that
-                                hosts information about Californian breweries,
-                                with an area to make notes about brewery visits.
-                            </p>
-                            <p class="sub-heading-mobile">
-                                <strong>Highlights: </strong>The site includes a
-                                request to the Open Brewery DB API, Angular
-                                routing, an Angular form with validation and a
-                                note making app.
-                            </p>
-                            <div class="btn-contain">
-                                <a
-                                    target="_blank"
-                                    href="https://github.com/nicoleelazar/breweries-notes-app"
-                                    class="button btn-modal"
-                                    >view code</a
-                                >
-                                <a
-                                    target="_blank"
-                                    href="https://breweries-notes-app.netlify.com"
-                                    class="button btn-modal"
-                                    >live view</a
-                                >
-                            </div>
                         </div>
                     </div>
 
-                    <!-- <p class="sentence">View the code to this <a class="word-link" target="_blank"
-                        href="https://github.com/nicoleelazar/nicoleelazar.github.io"><strong>responsive
-                            website</strong></a>.</p> -->
-
                     <p class="sub-heading end-space">
-                        See more of my development projects on
+                        See more of my projects on
                         <a
                             class="word-link"
                             target="_blank"
@@ -647,44 +596,38 @@
                     </div>
                 </div>
 
-                <div class="modal" id="modal2">
+                <div class="modal" id="modalClient1">
                     <div class="modal-content">
-                        <span class="close" onclick="closeModal('modal2')"
+                        <span class="close" onclick="closeModal('modalClient1')"
                             >&times;</span
                         >
                         <div class="modal-info">
-                            <h1 class="modal-heading">Breweries & Notes</h1>
-                            <p class="small-text">Personal Project 2019</p>
-                            <p class="sub-heading">
-                                <strong>Angular, TypeScript</strong>
+                            <h1 class="modal-heading">De Vries Arts</h1>
+                            <p class="small-text end-space-small">
+                                Client Project 2020
                             </p>
                             <img
                                 class="modal-image"
-                                src="./assets/notes.jpg"
-                                alt="notes app"
+                                src="assets/de-vries-arts-site.png"
+                                alt="de vries arts"
                             />
+
                             <p class="sub-heading">
-                                <strong>Brief: </strong>To create an app that
-                                hosts information about Californian breweries,
-                                with an area to make notes about brewery visits.
+                                <strong>Client: </strong>A creative studio for
+                                digital art.
                             </p>
+
                             <p class="sub-heading">
-                                <strong>Highlights: </strong>The site includes a
-                                request to the Open Brewery DB API, Angular
-                                routing, an Angular form with validation and a
-                                note making app.
+                                <strong>Project: </strong> <br />
+                                - Re-­designed existing company website. <br />
+                                - Re-­built style-sheet (SCSS), amended existing
+                                HTML and PHP.
                             </p>
                             <a
                                 target="_blank"
-                                href="https://github.com/nicoleelazar/breweries-notes-app"
+                                href="https://www.devriesarts.com/"
                                 class="button btn-modal"
-                                >view code</a
-                            >
-                            <a
-                                target="_blank"
-                                href="https://breweries-notes-app.netlify.com"
-                                class="button btn-modal"
-                                >live view</a
+                                >view live site</a
                             >
                         </div>
                     </div>
@@ -788,11 +731,12 @@
                 <div class="container">
                     <h1 class="heading">3D Motion Graphics</h1>
                     <p class="paragraphs">
-                        <strong>Tools: </strong>Cinema 4D, Octane Render, After
-                        Effects, Premiere Pro, Photoshop, Illustrator, InDesign.
+                        <strong>I work with: </strong>Cinema 4D, Octane Render,
+                        After Effects, Premiere Pro, Photoshop, Illustrator,
+                        InDesign.
                     </p>
                     <p class="paragraphs">
-                        Below is my motion design showreel:
+                        Motion design showreel:
                     </p>
 
                     <div class="resp-container">
@@ -821,9 +765,9 @@
                 <div class="container">
                     <h1 class="heading">Contact</h1>
                     <p class="sub-heading">
-                        As a developer, I enjoy coding beautiful interactions
-                        and building tactile and usable digital experiences.
-                        Feel free to send me an email or find me online.
+                        I enjoy coding smooth interactions and building tactile
+                        and usable digital experiences. Feel free to send me an
+                        email or find me online.
                     </p>
                     <div class="centered-inset">
                         <div class="my-photo"></div>

@@ -21,16 +21,16 @@ $(document).ready(function () {
     $("#burger-check").prop("checked", false);
 
     //DISABLE VIDEO FOR MOBILE
-    let screenWidth = $(window).width();
-    if (screenWidth > 850) {
-        $("#hero-video").attr("autoplay", "autoplay");
-    } else {
-        let videoPoster = "/assets/poster.png";
-        $(".home-poster-mobile").css({
-            "background-image": "url(" + videoPoster + ")",
-            display: "block",
-        });
-    }
+    // let screenWidth = $(window).width();
+    // if (screenWidth > 850) {
+    //     $("#hero-video").attr("autoplay", "autoplay");
+    // } else {
+    //     let videoPoster = "/assets/poster.png";
+    //     $(".home-poster-mobile").css({
+    //         "background-image": "url(" + videoPoster + ")",
+    //         display: "block",
+    //     });
+    // }
 
     //Year in footer
     updateYear();
