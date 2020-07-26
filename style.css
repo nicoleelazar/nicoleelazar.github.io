@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 * {
     padding: 0;
@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     position: relative;
 }
 
@@ -47,6 +47,18 @@ footer {
 .sub-heading {
     font-size: 18px;
     padding-bottom: 30px;
+    color: var(--color-grey-dark);
+}
+
+.brief {
+    font-size: 18px;
+    padding-bottom: 20px;
+    color: var(--color-grey-dark);
+}
+
+.highlights {
+    font-size: 18px;
+    padding-bottom: 40px;
     color: var(--color-grey-dark);
 }
 
@@ -103,12 +115,15 @@ footer {
     background-position: right center;
 }
 
+
 .tile-btn {
+    outline: none;
     text-align: center;
     text-decoration: none;
     font-size: 18px;
     padding: 18px;
     width: 220px;
+    border-radius: 3px;
     border: solid 1px var(--color-feature);
     color: var(--color-feature);
     background: white;
@@ -119,7 +134,7 @@ footer {
 
 .tile-btn::after {
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     height: 3px;
     position: absolute;
@@ -180,7 +195,7 @@ header {
 
 .logo {
     margin: 0 24px;
-    background: url("./assets/NicLogo1.png");
+    background: url('./assets/NicLogo1.png');
     background-size: contain;
     width: 35px;
     height: 35px;
@@ -202,7 +217,7 @@ header {
 }
 
 .nav-item::after {
-    content: "";
+    content: '';
     position: absolute;
     background: var(--color-feature);
     bottom: 10px;
@@ -290,8 +305,27 @@ nav {
     color: var(--color-feature-orange);
 }
 
-.project-tiles {
+.project-tiles, .client-tiles {
     width: 100%;
+}
+
+.coming-soon {
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.tile-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    overflow: hidden;
+}
+
+.project-tile-info {
+    width: 100%;
+    margin-bottom: 60px;
 }
 
 .sentence {
@@ -299,9 +333,6 @@ nav {
     color: var(--color-grey-dark);
 }
 
-/* .paragraph-small-size {
-    display: none;
-} */
 
 .paragraph-full-size {
     display: block;
@@ -345,89 +376,37 @@ nav {
     cursor: pointer;
 }
 
-#project-1,
-#project-2,
-#project-3,
-#project-4,
-#project-5,
-#project-6 {
-    margin-bottom: 8px;
-    overflow: hidden;
-    position: relative;
-    height: 250px;
+
+.coming-soon-image {
+    background-image: url('assets/chalk-board.jpg');
+    color: white;
+    text-align: center;
+    padding-top: 120px;
+    font-size: 18px;
+}
+
+.tile-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
     min-width: 300px;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.8;
 }
 
-#project-1 {
-    margin-top: 40px;
-}
 
-#project-2,
-#project-3,
-#project-4,
-#project-5,
-#project-6 {
-    margin-top: 80px;
-}
-
-#project-1::before,
-#project-2::before,
-#project-3::before,
-#project-4::before,
-#project-5::before,
-#project-6::before {
-    content: "";
+.tile-overlay {
+    z-index: 5;
+    position: absolute;
+    background: var(--color-grey-tile-overlay);
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-position: center;
-    background-size: cover;
-    transition: all 0.5s ease-in-out;
-    position: absolute;
-    opacity: 0.8;
-}
-
-#project-1::before {
-    background-image: url("./assets/space-invaders.jpg");
-}
-
-#project-2::before {
-    background-image: url("./assets/notes.jpg");
-}
-
-#project-3::before {
-    background-image: url("./assets/kitten.jpg");
-}
-
-#project-4::before {
-    background-image: url("./assets/pompeii.jpg");
-}
-
-#project-5::before {
-    background-image: url("./assets/narrative.jpg");
-}
-
-#project-6::before {
-    background-image: url("./assets/spices.jpg");
-}
-
-#project-1:hover::before,
-#project-2:hover::before,
-#project-3:hover::before,
-#project-4:hover::before,
-#project-5:hover::before,
-#project-6:hover::before {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-}
-
-.tile-overlay {
-    background: var(--color-grey-tile-overlay);
-    width: 100%;
-    height: 100%;
     opacity: 0;
     animation-name: animateTileOff;
     animation-duration: 0.5s;
@@ -446,12 +425,7 @@ nav {
     justify-content: center;
 }
 
-#project-1:hover .tile-overlay,
-#project-2:hover .tile-overlay,
-#project-3:hover .tile-overlay,
-#project-4:hover .tile-overlay,
-#project-5:hover .tile-overlay,
-#project-6:hover .tile-overlay {
+.tile-overlay:hover {
     animation-name: animateTileOn;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -463,6 +437,13 @@ nav {
     -ms-animation-duration: 0.5s;
     -ms-animation-fill-mode: forwards;
 }
+
+.tile-overlay:hover ~ .tile-image {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
 
 @keyframes animateTileOff {
     from {
@@ -534,30 +515,41 @@ nav {
 
 .project-language {
     color: var(--color-grey-dark);
-    margin-bottom: 38px;
 }
 
 .project-caption {
+    cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
     margin-top: 15px;
     color: var(--color-feature);
     text-transform: uppercase;
-    cursor: pointer;
 }
+
+.no-pointer {
+    cursor: default;
+}
+
+/* .contain-all {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+} */
 
 #modal-backing {
     display: none;
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     background-color: var(--color-grey-light);
 }
 
 .modal {
     display: none;
     position: fixed;
-    z-index: 15;
+    z-index: 25;
     left: 15%;
     top: 5%;
     width: 70%;
@@ -653,6 +645,7 @@ nav {
 
 .modal-info {
     padding: 80px;
+    line-height: 1.8;
 }
 
 .modal-heading {
@@ -666,8 +659,13 @@ nav {
     float: right;
     font-size: 35px;
     font-weight: bold;
-    padding: 15px;
+    margin: 15px;
+    padding: 0 10px;
     cursor: pointer;
+}
+
+.close::after {
+    content: '\00D7';
 }
 
 /* ------------------------- designer */
@@ -708,7 +706,7 @@ nav {
     width: 220px;
     height: 220px;
     margin: 20px 0;
-    background: url("./assets/myphoto.png");
+    background: url('./assets/myphoto.png');
     background-size: cover;
 }
 
@@ -746,7 +744,7 @@ nav {
 
 .email-btn::after {
     bottom: 0;
-    content: "";
+    content: '';
     display: block;
     height: 3px;
     position: absolute;
@@ -869,57 +867,14 @@ footer {
         margin: 0 auto;
     }
 
-    .tile {
-        height: 180px;
+    .tile-container {
+        height: 200px;
     }
 
-    .tile-overlay {
-        display: none;
+    .coming-soon-image {
+        padding-top: 95px;
     }
-
-    #project-1:hover::before,
-    #project-2:hover::before,
-    #project-3:hover::before,
-    #project-4:hover::before,
-    #project-5:hover::before,
-    #project-6:hover::before {
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
-    }
-
-    .button {
-        padding: 16px 40px;
-    }
-
-    .project-caption {
-        display: none;
-    }
-
-    .project-language {
-        display: none;
-    }
-
-    .mobile-project-info {
-        display: block;
-    }
-
-    .project-caption-mobile {
-        font-size: 16px;
-        margin-top: 25px;
-        color: var(--color-feature);
-        text-transform: uppercase;
-    }
-
-    /* .paragraph-small-size {
-        display: block;
-        font-size: 18px;
-        color: var(--color-grey-dark);
-    } */
-
-    /* .paragraph-full-size {
-        display: none;
-    } */
+    
 
     .modal {
         left: 0;
@@ -931,14 +886,9 @@ footer {
     .modal-info {
         padding: 30px;
     }
+
 }
 
-@media screen and (max-width: 350px) {
-    .button {
-        display: block;
-        margin-bottom: 15px;
-    }
-}
 
 /* mobile burger menu  ----------------------------------*/
 
@@ -952,6 +902,12 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
+
+    .button {
+        display: block;
+        margin-bottom: 15px;
+    }
+
     .container {
         width: 95%;
         margin: 0 auto;
@@ -1022,7 +978,7 @@ footer {
 
     .bar:before,
     .bar:after {
-        content: "";
+        content: '';
         top: -12px;
         width: 40px;
         height: 4px;
