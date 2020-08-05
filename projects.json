@@ -18,7 +18,7 @@
         "image": "/assets/spices.jpg",
         "title": "Recipe Finder",
         "caption": "Recipe Search App",
-        "languages": "React, Hooks, Modules",
+        "languages": "React, Hooks, Modules, Edamam API",
         "btnDetails": "project details",
         "projectYear": "Personal Project 2020",
         "brief": "To create an app that provides recipes corresponding to any searched ingredient.",
