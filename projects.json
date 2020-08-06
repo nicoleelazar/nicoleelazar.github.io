@@ -1,20 +1,6 @@
 [
     {
         "id": "1",
-        "image": "/assets/space-invaders.jpg",
-        "title": "Short Games",
-        "caption": "Desktop & Mobile Games",
-        "languages": "HTML, CSS, JavaScript",
-        "btnDetails": "project details",
-        "projectYear": "Personal Project 2019",
-        "brief": "To create a collection of games that can be completed quickly. There are currently 2 games in the collection, Alien Zap and Owl Attack.",
-        "highlight": "Alien Zap includes a small particle effect and collision detection, both games include a score board and Owl Attack can be played on both desktop and touch devices.",
-        "codeLink": "https://github.com/nicoleelazar/collection",
-        "siteLink": "https://game-collection.netlify.com",
-        "clientProject": false
-    },
-    {
-        "id": "2",
         "image": "/assets/spices.jpg",
         "title": "Recipe Finder",
         "caption": "Recipe Search App",
@@ -25,6 +11,20 @@
         "highlight": "The app includes a user input search field that makes requests to the Edamam food API.",
         "codeLink": "https://github.com/nicoleelazar/react-recipe-app",
         "siteLink": "https://recipe-finder-app-nicole.netlify.app",
+        "clientProject": false
+    },
+    {
+        "id": "2",
+        "image": "/assets/space-invaders.jpg",
+        "title": "Short Games",
+        "caption": "Desktop & Mobile Games",
+        "languages": "HTML, CSS, JavaScript",
+        "btnDetails": "project details",
+        "projectYear": "Personal Project 2019",
+        "brief": "To create a collection of games that can be completed quickly. There are currently 2 games in the collection, Alien Zap and Owl Attack.",
+        "highlight": "Alien Zap includes a small particle effect and collision detection, both games include a score board and Owl Attack can be played on both desktop and touch devices.",
+        "codeLink": "https://github.com/nicoleelazar/collection",
+        "siteLink": "https://game-collection.netlify.com",
         "clientProject": false
     },
     {
@@ -78,7 +78,7 @@
         "btnDetails": "project details",
         "projectYear": "Client Project 2020",
         "client": "A creative studio for digital art.",
-        "role": "Re-­designed existing company website. Re-­built style-sheet (SCSS), amended existing HTML and PHP.",
+        "role": "Improved brand presence by re-­designing and building the De Vries Arts website using HTML, SCSS and JavaScript, as well as re-working existing PHP to generate large gallery pages.",
         "siteLink": "https://www.devriesarts.com",
         "clientProject": true
     }

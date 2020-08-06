@@ -2,7 +2,6 @@ const copyMe = document.querySelector(".copy");
 const emailButton = document.querySelector(".email-btn");
 const emailArea = document.getElementById("hidden-content");
 const year = document.getElementById("year");
-const modals = document.querySelectorAll(".modal");
 const navBar = document.querySelector(".nav-bar");
 const target = document.querySelector(".scroll");
 const burger = document.getElementById("burger-check");
@@ -182,6 +181,12 @@ function getProjectData() {
                     document.body.style.overflow = 'auto';
                     modalBacking.style.display = 'none';
                 })
+
+                // prevent child of modalBacking from closing modal
+                modal.addEventListener('click', (e) => {
+                    e.stopPropagation()
+                })
+
                 //close modal
                 modalBacking.addEventListener('click', () => {
                     modal.style.display = 'none';
@@ -200,6 +205,7 @@ function getProjectData() {
 }
 
 getProjectData();
+
 
 
 //------------------------------------------

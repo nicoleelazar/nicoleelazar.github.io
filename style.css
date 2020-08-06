@@ -544,12 +544,14 @@ nav {
     position: fixed;
     z-index: 20;
     background-color: var(--color-grey-light);
+    cursor: pointer;
 }
 
 .modal {
+    cursor: default;
     display: none;
     position: fixed;
-    z-index: 25;
+    z-index: 35;
     left: 15%;
     top: 5%;
     width: 70%;
@@ -641,11 +643,13 @@ nav {
     background-color: white;
     width: 100%;
     min-height: 100%;
+    z-index: 35;
 }
 
 .modal-info {
     padding: 80px;
     line-height: 1.8;
+    z-index: 35;
 }
 
 .modal-heading {
@@ -666,6 +670,7 @@ nav {
 
 .close::after {
     content: '\00D7';
+    cursor: pointer;
 }
 
 /* ------------------------- designer */
